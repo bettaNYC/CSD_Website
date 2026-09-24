@@ -1,0 +1,39 @@
+<!-- Shared <head> resources + sitewide structured data. Edit here, then run `node scripts/build.js`.
+     Page-specific <title>, meta description, canonical and OG tags stay in each page ABOVE this block. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Instrument+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="{{base}}assets/css/site.css">
+<link rel="icon" type="image/png" sizes="32x32" href="{{base}}assets/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{base}}assets/images/favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="{{base}}assets/images/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{base}}assets/images/apple-touch-icon.png">
+<script defer src="{{base}}assets/js/site.js"></script>
+
+<!-- SITEWIDE SCHEMA · Organization + LocalBusiness.  TODO: replace PLACEHOLDER address/phone/email once provided. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "LocalBusiness"],
+  "name": "Carmelina Santoro Designs",
+  "alternateName": "CSD",
+  "description": "Full-service interior design and architecture studio for hospitality, residential, and retail — New York, Miami, and the Caribbean.",
+  "url": "https://www.carmelinasantoro.com/",
+  "image": "https://www.carmelinasantoro.com/assets/images/betsy-hotel-south-beach.jpg",
+  "founder": { "@type": "Person", "name": "Carmelina Santoro" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "PLACEHOLDER — studio street address",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "addressCountry": "US"
+  },
+  "email": "PLACEHOLDER@carmelinasantoro.com",
+  "telephone": "+1-646-421-5784",
+  "areaServed": ["New York", "Miami", "South Beach", "Grenada", "Caribbean"],
+  "sameAs": [
+    "https://www.facebook.com/carmelina.santoro",
+    "https://www.instagram.com/design4passion_"
+  ]
+}
+</script>
