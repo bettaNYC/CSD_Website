@@ -68,7 +68,7 @@ function renderGalleryTile(p, base) {
      no-JS fallback) never show it; site.js reveals it when Retail is active. */
   const hideAllAttr = p.hideFromAll ? ` data-hide-all="true" hidden` : "";
   return [
-    `    <a class="gallery-tile reveal" href="/projects/${esc(p.slug)}.html" data-category="${esc(p.category || "")}"${hideAllAttr} aria-label="${esc(p.title)}">`,
+    `    <a class="gallery-tile reveal" href="/projects/${esc(p.slug)}" data-category="${esc(p.category || "")}"${hideAllAttr} aria-label="${esc(p.title)}">`,
     `      <img class="gallery-tile__img" src="${imgSrc}" alt="${esc(p.alt)}" loading="lazy">`,
     `      <span class="gallery-tile__overlay" aria-hidden="true"><span class="gallery-tile__title">${esc(p.title)}</span></span>`,
     `    </a>`
